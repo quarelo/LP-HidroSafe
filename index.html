@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HydroSafe</title>
+    <link rel="stylesheet" href="/src/css/style.css">
+</head>
+
+<body>
+    <header class="layout-grid">
+        <img src="/src/assets/imgs/logotipo.svg" alt="Logotipo HidroSafe" />
+        <nav>
+            <a href="#problema">Problema</a>
+            <a href="#solucao">Solução</a>
+            <a href="#objetivos">Objetivos</a>
+            <a href="#publico">Público-Alvo</a>
+            <a href="#beneficios">Benefícios</a>
+            <a href="#aplicacao">Aplicação</a>
+        </nav>
+    </header>
+
+    <img id="banner" src="/src/assets/imgs/heroimg.svg" alt="Imagem de uma enchente em São Paulo" />
+
+    <section id="problema" class="section1 layout-grid">
+        <h1><span>Enchente:</span> um risco invisível que cresce a cada chuva</h1>
+        <p>As enchentes causam prejuízos, doenças e desabrigo, principalmente em regiões urbanas com pouca
+            infraestrutura e drenagem. Fatores como impermeabilização do solo e mudanças climáticas aumentam os riscos e
+            dificultam a prevenção comunitária.</p>
+        <button onclick="document.getElementById('solucao').scrollIntoView({ behavior: 'smooth' })">Saiba Mais</button>
+    </section>
+
+    <section id="solucao" class="section2">
+        <h1>Integração entre Web e IoT<br><span>para salvar vidas</span></h1>
+        <p id="about">Sensores físicos detectam nível da água e chuva em tempo real, ativando LEDs e buzzer conforme o
+            risco. A
+            plataforma web mostra mapas, simulações e dicas de prevenção, integrando hardware e software para fácil
+            monitoramento.</p>
+
+        <div class="grid">
+            <div class="arduino">
+                <h2>Arduino Uno com sensores analógicos:</h2>
+                <p>
+                    NTC1 (sensor de nível de água) → detecta acúmulo de água;
+                    NTC2 (sensor de chuva) → identifica intensidade da chuva;
+                    LEDs:
+                    Verde (nível seguro),
+                    Amarelo (atenção),
+                    Vermelho (risco alto);
+                    Buzzer: alerta sonoro em situação crítica.
+                </p>
+            </div>
+
+            <div class="web">
+                <h2>Plataforma Web Responsiva:</h2>
+                <p>
+                    Visualiza dados em tempo real;
+                    Mapa interativo com áreas de risco;
+                    Simulador de impacto de chuvas;
+                    Acesso a dicas práticas de prevenção.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="objetivos" class="section3 layout-grid">
+        <h1>Os Objetivos que Pretendem Alcançar</h1>
+        <p>Reduzir enchentes em até 70%, protegendo comunidades vulneráveis e promovendo segurança com alertas
+            inteligentes. Incentivar o uso de tecnologia acessível, aproximando cidadãos da prevenção e da participação
+            ativa nas soluções.</p>
+        <div class="grid">
+            <img id="card" src="/src/assets/imgs/card1.svg"
+                alt="Imagem de card dizendo, Reduzir alagamentos em até 70%" />
+            <img id="card2" src="/src/assets/imgs/card2.svg"
+                alt="Imagem de card dizendo,   Aumentar a segurança da população" />
+            <img id="card3" src="/src/assets/imgs/card3.svg"
+                alt="Imagem de card dizendo, Diminuir doenas causadas por enchentes" />
+            <img id="card4" src="/src/assets/imgs/card4.svg"
+                alt="Imagem de card dizendo, Incentivar participação cidadã" />
+        </div>
+    </section>
+
+    <section id="publico" class="section4 layout-grid">
+        <div class="grid">
+            <h1>Pensado para quem mais precisa!</h1>
+            <p>Moradores de áreas de risco, comunidades carentes e qualquer cidadão que precise de informações rápidas
+                sobre alagamentos. A plataforma é acessível, responsiva e pensada para pessoas com baixa familiaridade
+                tecnológica ou com deficiência visual.</p>
+        </div>
+        <img src="/src/assets/imgs/img1.svg"
+            alt="Imagem exibindo um indicativo da diferencia dos publicos alcançados" />
+    </section>
+
+    <section id="beneficios" class="section5 layout-grid">
+        <img src="/src/assets/imgs/img2.svg" alt="Imagem exibindo uma enchente em uma grande cidade" />
+        <div class="grid">
+            <h1>Os Benefícios Oferecidos pela Solução</h1>
+            <p>Alertas visuais e sonoros em tempo real ajudam a agir antes dos riscos se tornarem emergências. Com dados
+                confiáveis e acessíveis, usuários se sentem mais seguros e preparados diante de chuvas intensas.</p>
+        </div>
+    </section>
+
+    <section id="aplicacao" class="section6 layout-grid">
+        <div class="grid">
+            <h1>Como a Solução Ajudará no Dia a Dia dos Usuários</h1>
+            <p>A HidroSafe informa o risco atual, simula cenários e orienta o que fazer em cada fase da enchente. Ela
+                conecta tecnologia à rotina, oferecendo tranquilidade mesmo em períodos críticos de chuva.</p>
+        </div>
+        <img src="/src/assets/imgs/img3.svg" alt="Imagem com um café e um relógio" />
+    </section>
+
+    <footer>
+        <div class="footer layout-grid">
+            <img src="/src/assets/imgs/logotiponegativa.svg" alt="Imagem da logotipo do HidroSafe" />
+            <hr>
+            <nav>
+                <a href="#problema">Problema</a>
+                <a href="#solucao">Solução</a>
+                <a href="#objetivos">Objetivos</a>
+                <a href="#publico">Público-Alvo</a>
+                <a href="#beneficios">Benefícios</a>
+                <a href="#aplicacao">Aplicação</a>
+            </nav>
+        </div>
+    </footer>
+</body>
+
+</html>
