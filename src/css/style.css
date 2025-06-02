@@ -134,7 +134,7 @@ header nav a:hover{
 
 .section2{
     width: 90vw;
-    height: 580px;
+    height: auto;
     background-color: #5B7BA570;
 
     border-radius: 20px;
@@ -198,6 +198,8 @@ header nav a:hover{
 
     font-size: 20px;
     line-height: 2;
+
+    padding-bottom: 30px;
 }
 
 .section3{
