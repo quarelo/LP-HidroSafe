@@ -20,6 +20,89 @@
   --cor-texto: #1E1E1E;
 }
 
+/* Tema escuro */
+body.tema-escuro {
+    background-color: #222;
+    color: white;
+}
+
+body.tema-escuro h1,
+body.tema-escuro h2,
+body.tema-escuro p,
+body.tema-escuro a,
+body.tema-escuro label,
+body.tema-escuro #pergunta,
+body.tema-escuro #mensagem-final {
+    color: white;
+}
+
+body.tema-escuro input,
+body.tema-escuro textarea {
+    background-color: #333;
+    color: white;
+    border-color: white;
+}
+
+body.tema-escuro #opcoes button {
+    background-color: #444;
+    color: white;
+    border-color: white;
+}
+
+body.tema-escuro #opcoes button:hover {
+    background-color: #666;
+}
+
+body.tema-escuro header nav a {
+    color: white;
+}
+
+body.tema-escuro header nav a:hover {
+    color: var(--azul-claro);
+}
+
+/* Tema verde */
+body.tema-verde {
+    background-color: #dceee0;
+    color: #1E1E1E;
+}
+
+body.tema-verde h1,
+body.tema-verde h2,
+body.tema-verde p,
+body.tema-verde a,
+body.tema-verde label,
+body.tema-verde #pergunta,
+body.tema-verde #mensagem-final {
+    color: #1E1E1E;
+}
+
+body.tema-verde input,
+body.tema-verde textarea {
+    background-color: #e5f2e8;
+    color: #1E1E1E;
+    border-color: #5B7BA5;
+}
+
+body.tema-verde #opcoes button {
+    background-color: #f4fbf6;
+    color: #1E1E1E;
+    border-color: #5B7BA5;
+}
+
+body.tema-verde #opcoes button:hover {
+    background-color: #b9d8c3;
+}
+
+body.tema-verde header nav a {
+    color: #1E1E1E;
+}
+
+body.tema-verde header nav a:hover {
+    color: #2a5234;
+}
+
+
 /* Reset */
 * {
     margin: 0;
@@ -73,6 +156,18 @@ header nav a:hover {
 #main-menu.hidden {
     display: none;
 }
+
+#tema-selector {
+    display: flex;
+    gap: 10px;
+    margin-left: auto;
+}
+
+.tema {
+    cursor: pointer;
+    font-size: 20px;
+}
+
 
 @media (max-width: 768px) {
     header nav {
