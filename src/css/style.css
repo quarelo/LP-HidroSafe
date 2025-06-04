@@ -477,6 +477,22 @@ header nav a:hover {
     background-color: var(--azul-claro);
 }
 
+#proxima {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: var(--azul);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: MontserratSemiBold;
+}
+
+#mensagem-final {
+    font-family: Montserrat;
+    font-size: 20px;
+    margin-top: 20px;
+}
 
 footer{
     background-color: var(--azul);
