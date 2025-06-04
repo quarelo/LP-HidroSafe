@@ -183,6 +183,52 @@
         <p id="mensagem-final"></p>
     </section>
 
+    <script>
+        const perguntas = [
+
+        ];
+
+        let index = 0;
+        let acertos = 0;
+
+        document.getElementById("start-quiz-form").onsubmit = (e) => {
+            e.preventDefault();
+            const nome = document.getElementById("nome").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const aceite = document.getElementById("aceite").checked;
+
+            if (nome && email && aceite) {
+                document.getElementById("quiz-intro").style.display = "none";
+                document.getElementById("quiz").style.display = "block";
+                mostrarPergunta();
+            } else {
+                alert("Preencha todos os campos!");
+            }
+        };
+
+        function mostrarPergunta() {
+            const atual = perguntas[index];
+            document.getElementById("pergunta").innerText = atual.pergunta;
+            document.getElementById("opcoes").innerHTML = "";
+            atual.opcoes.forEach((op, i) => {
+                const btn = document.createElement("button");
+                btn.innerText = op;
+                btn.onclick = () => {
+                    if (i === atual.correta) acertos++;
+                    index++;
+                    if (index < perguntas.length) {
+                        mostrarPergunta();
+                    } else {
+                        document.getElementById("quiz").style.display = "none";
+                        document.getElementById("resultado").style.display = "block";
+                        document.getElementById("mensagem-final").innerText = `Você acertou ${acertos} de ${perguntas.length} perguntas.`;
+                    }
+                };
+                document.getElementById("opcoes").appendChild(btn);
+            });
+        }
+    </script>
+
 
     <footer>
         <div class="footer layout-grid">
