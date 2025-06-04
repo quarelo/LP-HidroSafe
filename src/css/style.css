@@ -39,23 +39,23 @@ body {
     align-items: center;
 }
 
-header{
+header {
     display: flex;
     align-items: center;
 
     padding-top: 20px;
 }
 
-header img{
+header img {
     margin-right: 200px;
 }
 
-header nav{
+header nav {
     display: flex;
-    gap: 50px;
+    gap: 30px;
 }
 
-header nav a{
+header nav a {
     font-family: Montserrat;
     font-size: 16px;
 
@@ -66,9 +66,31 @@ header nav a{
     text-decoration: none;
 }
 
-header nav a:hover{
+header nav a:hover {
     color: var(--azul);
 }
+
+#main-menu.hidden {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    header nav {
+        display: none;
+    }
+
+    #menu-toggle {
+        display: block;
+    }
+
+    #main-menu {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+
 
 #banner{
     margin-top: 20px;
