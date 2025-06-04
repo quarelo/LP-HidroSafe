@@ -37,7 +37,7 @@
         </div>
     </header>
 
-        <script>
+    <script>
         const temas = {
             padrao: "tema-padrao",
             escuro: "tema-escuro",
@@ -170,6 +170,17 @@
             <label><input type="checkbox" id="aceite" required /> Aceito os termos</label>
             <button type="submit">Iniciar Quiz</button>
         </form>
+    </section>
+
+    <section id="quiz" class="layout-grid" style="display: none;">
+        <div id="pergunta"></div>
+        <div id="opcoes"></div>
+        <button id="proxima">Próxima</button>
+    </section>
+
+    <section id="resultado" class="layout-grid" style="display: none;">
+        <h2>Resultado:</h2>
+        <p id="mensagem-final"></p>
     </section>
 
 
