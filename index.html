@@ -37,6 +37,27 @@
         </div>
     </header>
 
+        <script>
+        const temas = {
+            padrao: "tema-padrao",
+            escuro: "tema-escuro",
+            verde: "tema-verde"
+        };
+
+        document.querySelectorAll(".tema").forEach(icon => {
+            icon.onclick = () => {
+                document.body.className = temas[icon.dataset.tema];
+            };
+        });
+    </script>
+
+    <script>
+        document.getElementById("menu-toggle").onclick = () => {
+            const menu = document.getElementById("main-menu");
+            menu.classList.toggle("hidden");
+        };
+    </script>
+
     <img id="banner" src="/src/assets/imgs/heroimg.svg" alt="Imagem de uma enchente em São Paulo" />
 
     <section id="problema" class="section1 layout-grid">
