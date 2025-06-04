@@ -400,6 +400,84 @@ header nav a:hover {
     margin-right: 20px;
 }
 
+#quiz-intro,
+#quiz,
+#resultado {
+    margin: 50px 0;
+    padding: 30px;
+    background-color: var(--bege);
+    border-radius: 20px;
+    width: 90%;
+    text-align: center;
+}
+
+#quiz-intro h2,
+#resultado h2 {
+    font-family: MontserratSemiBold;
+    color: var(--cor-texto);
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+#start-quiz-form input,
+#start-quiz-form label,
+#start-quiz-form button {
+    display: block;
+    margin: 15px auto;
+    font-family: Montserrat;
+    font-size: 16px;
+    width: 60%;
+}
+
+#start-quiz-form input {
+    padding: 10px;
+    border: 2px solid var(--azul);
+    border-radius: 10px;
+}
+
+#start-quiz-form label {
+    text-align: left;
+    width: 60%;
+    margin-top: 10px;
+}
+
+#start-quiz-form button {
+    background-color: transparent;
+    border: 2px solid var(--azul);
+    color: var(--azul);
+    padding: 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: MontserratSemiBold;
+}
+
+#start-quiz-form button:hover {
+    background-color: #5b7ba540;
+}
+
+#pergunta {
+    font-family: MontserratSemiBold;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#opcoes button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 60%;
+    border: 2px solid var(--azul);
+    border-radius: 10px;
+    background-color: white;
+    cursor: pointer;
+    font-family: Montserrat;
+}
+
+#opcoes button:hover {
+    background-color: var(--azul-claro);
+}
+
+
 footer{
     background-color: var(--azul);
 
