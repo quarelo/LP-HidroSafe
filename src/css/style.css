@@ -1,3 +1,5 @@
+CSS
+
 @font-face {
     font-family: Montserrat;
     src: url(../assets/fonts/Montserrat/static/Montserrat-Regular.ttf);
@@ -14,10 +16,10 @@
 }
 
 :root {
-  --azul: #5B7BA5;
-  --azul-claro: #B3CBE5;
-  --bege: #E8ECDA;
-  --cor-texto: #1E1E1E;
+    --azul: #5B7BA5;
+    --azul-claro: #B3CBE5;
+    --bege: #E8ECDA;
+    --cor-texto: #1E1E1E;
 }
 
 /* Tema escuro */
@@ -153,10 +155,6 @@ header nav a:hover {
     color: var(--azul);
 }
 
-#main-menu.hidden {
-    display: none;
-}
-
 #tema-selector {
     display: flex;
     gap: 10px;
@@ -168,6 +166,17 @@ header nav a:hover {
     font-size: 20px;
 }
 
+#menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#main-menu.hidden {
+    display: none;
+}
 
 @media (max-width: 768px) {
     header nav {
@@ -185,6 +194,9 @@ header nav a:hover {
     }
 }
 
+#banner {
+    margin-top: 20px;
+}
 
 #slideshow {
     position: relative;
@@ -206,9 +218,7 @@ header nav a:hover {
     opacity: 1;
 }
 
-
-
-.section1{
+.section1 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -218,21 +228,21 @@ header nav a:hover {
     margin: 50px 0;
 }
 
-.section1 h1{
+.section1 h1 {
     font-family: MontserratSemiBold;
     color: var(--cor-texto);
 
     font-size: 30px;
 }
 
-.section1 h1 span{
+.section1 h1 span {
     font-family: MontserratSemiBold;
     color: var(--azul);
 
     font-size: 30px;
 }
 
-.section1 p{
+.section1 p {
     font-family: Montserrat;
     color: var(--cor-texto);
 
@@ -241,7 +251,7 @@ header nav a:hover {
     text-align: center;
 }
 
-.section1 button{
+.section1 button {
     font-family: MontserratSemiBold;
     color: var(--azul);
 
@@ -260,15 +270,15 @@ header nav a:hover {
     cursor: pointer;
 }
 
-.section1 button:hover{
+.section1 button:hover {
     border-radius: 50px;
     background-color: #5b7ba560;
     border: 2px solid var(--azul);
 }
 
-.section2{
+.section2 {
     width: 90vw;
-    height: auto;
+    height: 580px;
     background-color: #5B7BA570;
 
     border-radius: 20px;
@@ -280,7 +290,7 @@ header nav a:hover {
     align-items: center;
 }
 
-.section2 h1{
+.section2 h1 {
     font-family: MontserratSemiBold;
     color: white;
     text-align: center;
@@ -288,14 +298,14 @@ header nav a:hover {
     font-size: 50px;
 }
 
-.section2 h1 span{
+.section2 h1 span {
     font-family: MontserratSemiBold;
     color: var(--azul);
 
     font-size: 50px;
 }
 
-.section2 #about{
+.section2 #about {
     font-family: Montserrat;
     color: white;
 
@@ -307,14 +317,14 @@ header nav a:hover {
     margin: 15px 0 50px 0;
 }
 
-.section2 .grid{
+.section2 .grid {
     display: flex;
 
     width: 80%;
 }
 
 .section2 .grid .arduino h2,
-.section2 .grid .web h2{
+.section2 .grid .web h2 {
     font-family: MontserratSemiBold;
     color: white;
 
@@ -324,7 +334,7 @@ header nav a:hover {
 }
 
 .section2 .grid .arduino p,
-.section2 .grid .web p{
+.section2 .grid .web p {
     font-family: Montserrat;
     color: white;
 
@@ -332,15 +342,13 @@ header nav a:hover {
 
     font-size: 20px;
     line-height: 2;
-
-    padding-bottom: 30px;
 }
 
-.section3{
+.section3 {
     margin: 50px 0;
 }
 
-.section3 h1{
+.section3 h1 {
     font-family: MontserratSemiBold;
     color: var(--cor-texto);
     text-align: center;
@@ -348,7 +356,7 @@ header nav a:hover {
     font-size: 50px;
 }
 
-.section3 p{
+.section3 p {
     font-family: Montserrat;
     color: var(--cor-texto);
     text-align: center;
@@ -358,17 +366,17 @@ header nav a:hover {
     margin: 20px 0 30px 0;
 }
 
-.section3 .grid{
+.section3 .grid {
     display: flex;
 }
 
-.section3 .grid img{
+.section3 .grid img {
     width: 25%;
 }
 
 .section4,
 .section5,
-.section6{
+.section6 {
     display: flex;
     align-items: center;
 
@@ -377,7 +385,7 @@ header nav a:hover {
 
 .section4 h1,
 .section5 h1,
-.section6 h1{
+.section6 h1 {
     font-family: MontserratSemiBold;
     color: var(--cor-texto);
 
@@ -386,7 +394,7 @@ header nav a:hover {
 
 .section4 p,
 .section5 p,
-.section6 p{
+.section6 p {
     font-family: Montserrat;
     color: var(--cor-texto);
 
@@ -396,7 +404,7 @@ header nav a:hover {
     margin: 20px 0 30px 0;
 }
 
-.section5 img{
+.section5 img {
     margin-right: 20px;
 }
 
@@ -494,7 +502,7 @@ header nav a:hover {
     margin-top: 20px;
 }
 
-footer{
+footer {
     background-color: var(--azul);
 
     width: 100vw;
@@ -504,22 +512,22 @@ footer{
     padding: 50px 0;
 }
 
-footer .footer{
+footer .footer {
     display: flex;
     align-items: center;
 }
 
-footer .footer hr{
+footer .footer hr {
     height: 80px;
     margin: 0 30px;
 }
 
-footer .footer nav{
+footer .footer nav {
     display: flex;
     gap: 50px;
 }
 
-footer .footer nav a{
+footer .footer nav a {
     font-family: Montserrat;
     font-size: 16px;
 
